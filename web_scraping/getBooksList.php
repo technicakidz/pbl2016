@@ -3,8 +3,7 @@ require 'vendor/autoload.php';
 use Goutte\Client;
 $client = new Client();
 
-// 対象のページURL
-$url = 'xxxxxxxxxxxxxxx';
+$url = '*****対象のURLが入ります*****';
 $crawler = $client->request('GET',$url);
 
 // 押して検索するボタン
@@ -12,7 +11,7 @@ $form = $crawler->selectButton('search')->form();
 
 // 検索したいキーワード
 $searchParameters = [
-    'keyword'       => 'アメリカ',
+    'keyword'       => '*****検索したいキーワードが入ります*****',
     'searchtarget'  => 'BK',
 ];
 
